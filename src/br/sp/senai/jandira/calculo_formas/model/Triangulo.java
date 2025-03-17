@@ -31,7 +31,10 @@ public class Triangulo {
 		double area = calcularArea();
 		System.out.println("Forma Geométrica - Triângulo");
 		System.out.println("-------------------------------");
-		System.out.printf("BASE: ");
+		System.out.printf("BASE: %s\n", base);
+		System.out.printf("ALTURA: %s\n", altura);
+		System.out.printf("ÁREA: %s\n", area);
+		System.out.println("-------------------------------");
 	}
 		
 		

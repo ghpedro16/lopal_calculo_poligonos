@@ -30,6 +30,7 @@ public class Quadrado {
 		System.out.printf("LADO: %s\n", lado);
 		System.out.printf("ÁREA: %s\n", area);
 		System.out.printf("PERÍMETRO: %s\n", perimetro);
+		System.out.println("-------------------------------");
 	}
 
 

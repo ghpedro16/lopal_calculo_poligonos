@@ -18,6 +18,23 @@ public class Main {
 		
 		quadrado.setLado(4);
 		quadrado.mostrarDados();
+		
+		retangulo.setBase(8);
+		retangulo.setAltura(5);
+		retangulo.mostrarDados();
+		
+		triangulo.setBase(4);
+		triangulo.setAltura(7);
+		triangulo.mostrarDados();
+		
+		trapezio.setBaseMenor(4);
+		trapezio.setBaseMaior(8);
+		trapezio.setAltura(5);
+		trapezio.mostrarDados();
+		
+		raio.setRaio(8);
+		raio.mostrarDados();
+		
 	}
 
 }

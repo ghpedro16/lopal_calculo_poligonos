@@ -34,6 +34,15 @@ public class Retangulo {
 	public void mostrarDados(){
 		double area = calcularArea();
 		double perimetro = calcularPerimetro();
+		System.out.println("Forma Geométrica - Retângulo");
+		System.out.println("-------------------------------");
+		System.out.printf("BASE: %s\n", base);
+		System.out.printf("ALTURA: %s\n", altura);
+		System.out.printf("ÁREA: %s\n", area);
+		System.out.printf("PERÍMETRO: %s\n", perimetro);
+		System.out.println("-------------------------------");
+		
+		
 		
 	}
 

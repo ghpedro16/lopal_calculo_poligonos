@@ -22,7 +22,7 @@ public class Trapezio {
 		return baseMaior;
 	}
 	
-	public void setAltura() {
+	public void setAltura(double altura) {
 		this.altura = altura;
 	}
 	
@@ -36,6 +36,14 @@ public class Trapezio {
 	}
 
 	public void mostrarDados(){
+		double area = calcularArea();
+		System.out.println("Forma Geométrica - Trapézio");
+		System.out.println("-------------------------------");
+		System.out.printf("BASE MENOR: %s\n", baseMenor);
+		System.out.printf("BASE MAIOR: %s\n", baseMaior);
+		System.out.printf("ALTURA: %s\n", altura);
+		System.out.printf("ÁREA: %s\n", area);
+		System.out.println("-------------------------------");
 		
 	}
 

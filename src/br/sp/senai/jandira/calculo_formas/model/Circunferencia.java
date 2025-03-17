@@ -20,9 +20,10 @@ public class Circunferencia {
 	public void mostrarDados(){
 		double area = calcularArea();
 		System.out.println("Forma Geométrica - Circulo");
-		System.out.println("--------------------------------");
+		System.out.println("-------------------------------");
 		System.out.printf("RAIO: %s\n", raio);
 		System.out.printf("CIRCUNFERÊNCIA: %s\n", area);
+		System.out.println("-------------------------------");
 	}
 	
 
