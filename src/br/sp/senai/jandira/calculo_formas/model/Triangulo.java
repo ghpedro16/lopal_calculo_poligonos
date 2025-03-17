@@ -2,38 +2,61 @@ package br.sp.senai.jandira.calculo_formas.model;
 
 public class Triangulo {
 	
-	private double base;
-	private double altura;
+	private double ladoA;
+	private double ladoB;
+	private double ladoC;
 	
-	public void setBase(double base) {
-		this.base = base;
+	public void setLadoA(double ladoA) {
+		this.ladoA = ladoA;
 	}
 	
-	public double getBase() {
-		return base;
+	public double getLadoA() {
+		return ladoA;
 		
 	}
 	
-	public void setAltura(double altura) {
-		this.altura = altura;
+	public void setLadoB(double ladoB) {
+		this.ladoB = ladoB;
 	}
 	
-	public double getAltura() {
-		return altura;
+	public double getLadoB() {
+		return ladoB;
 	}
 	
-	public double calcularArea(){
-		double area = (base * altura) / 2;
-		return area;
+	public void setLadoC(double ladoC) {
+		this.ladoC = ladoC;
+	}
+	
+	public double getLadoC() {
+		return ladoC;
+	}
+	
+//	public double calcularArea(){
+//	}
+	
+	public void tipoTriangulo() {
+		if (ladoA < ladoB + ladoC && ladoB < ladoA + ladoC && ladoC < ladoA + ladoB) {
+			if (ladoA == ladoB && ladoB == ladoC) {
+				System.out.println("É um triângulo EQUILÁTERO!");
+			} else if (ladoA != ladoB && ladoB != ladoC) {
+				System.out.println("É um triângulo ESCALENO!");
+			} else {
+				System.out.println("É um triângulo ISÓSCELES!");
+			}
+		} else {
+			System.out.println("As medidas informadas NÃO formam um triângulo.");
+		}
 	}
 	
 	public void mostrarDados(){
-		double area = calcularArea();
+//		double area = calcularArea();
 		System.out.println("Forma Geométrica - Triângulo");
 		System.out.println("-------------------------------");
-		System.out.printf("BASE: %s\n", base);
-		System.out.printf("ALTURA: %s\n", altura);
-		System.out.printf("ÁREA: %s\n", area);
+		System.out.printf("LADO A: %s\n", ladoA);
+		System.out.printf("LADO B: %s\n", ladoB);
+		System.out.printf("LADO C %s\n", ladoC);
+		tipoTriangulo();
+//		System.out.printf("ÁREA: %s\n", area);
 		System.out.println("-------------------------------");
 	}
 		
