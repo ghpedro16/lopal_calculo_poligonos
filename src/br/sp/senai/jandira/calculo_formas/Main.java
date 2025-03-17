@@ -16,7 +16,7 @@ public class Main {
 		Trapezio trapezio = new Trapezio();
 		Circunferencia raio = new Circunferencia();
 		
-		quadrado.setLado(4);
+		quadrado.setLado(6);
 		quadrado.mostrarDados();
 		
 		retangulo.setBase(8);
